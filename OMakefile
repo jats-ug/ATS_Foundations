@@ -6,8 +6,10 @@ RST_FILES = $(glob source/*.rst)
 .DEFAULT: $(CONF_FILE) $(RST_FILES)
 	make html
 
-publish:
-	# TODO
+publish: .DEFAULT
+	mkdir -p $(HOME)/doc/jats-ug.github.io/doc/ATS2
+	rm -rf $(HOME)/doc/jats-ug.github.io/doc/ATS2/ATS_Foundations_ja
+	cp -rf build/html $(HOME)/doc/jats-ug.github.io/doc/ATS2/ATS_Foundations_ja
 
 clean:
 	make clean
