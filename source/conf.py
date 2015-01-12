@@ -258,3 +258,17 @@ texinfo_documents = [
 
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
+
+# Add project information to the template context.
+context = {
+    'display_github': True,
+    'github_user': 'jats-ug',
+    'github_repo': 'ATS_Foundations',
+    'github_version': 'master/',
+    'conf_py_path': 'source/',
+    'source_suffix': source_suffix,
+}
+if 'html_context' in globals():
+    html_context.update(context)
+else:
+    html_context = context
