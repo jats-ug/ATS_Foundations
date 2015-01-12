@@ -1,3 +1,5 @@
+# Book: ATS programming foundations
+
 ## License
 
 Copyright (c) 2015 [Metasepi team](http://www.metasepi.org/).
