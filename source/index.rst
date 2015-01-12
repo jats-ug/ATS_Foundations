@@ -12,6 +12,7 @@ Contents:
    :maxdepth: 2
 
    preface
+   basic_datatype
 
 Indices and tables
 ==================
