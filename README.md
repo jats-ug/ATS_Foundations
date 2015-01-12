@@ -1,4 +1,4 @@
-# Book: ATS programming foundations
+# Book: ATSプログラミングの基礎
 
 ## License
 
