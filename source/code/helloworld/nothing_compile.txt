@@ -1,0 +1,7 @@
+$ ls
+nothing.dats
+$ patscc nothing.dats
+$ ls
+a.out  nothing.dats  nothing_dats.c
+$ ./a.out
+$
