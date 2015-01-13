@@ -10,8 +10,10 @@ Contents:
 
 .. toctree::
    :maxdepth: 2
+   :numbered:
 
    preface
+   helloworld
    basic_datatype
 
 Indices and tables
