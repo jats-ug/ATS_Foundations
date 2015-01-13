@@ -13,17 +13,23 @@
 ATS言語について
 ===============
 
-xxx
+xxx なぜ新しい関数型言語を学ぶべきか
 
 参考となる資料
 ==============
 
-* http://www.ats-lang.org/
-* https://github.com/githwxi/ATS-Postiats/wiki
-* http://jats-ug.metasepi.org/doc/ATS2/INT2PROGINATS/
-* http://jats-ug.metasepi.org/doc/ATS2/ATS2TUTORIAL/
-* https://github.com/jats-ug/translate/blob/master/Manual/EffectiveATS.md
-* https://github.com/jats-ug/translate/blob/master/Web/cs.likai.org/ats/ml-programmers-guide-to-ats.md
-* http://jats-ug.metasepi.org/
+* `ATS言語公式サイト`_ - 本家サイトです (英語)
+* `ATSプログラミング入門`_ - 最も詳しい ATS 言語の入門書です
+* `ATS言語公式Wiki`_ - 初心者が落ち入りがちな罠に対して、豊富な説明があります (英語)
+* `ATSプログラミングチュートリアル`_
+* `Effective ATS`_ - 実践的な例から ATS 言語の使い方を説明しています
+* `MLプログラマ向けATS言語ガイド`_
+* `Japan ATS User Group`_
 
-xxx
+.. _`ATS言語公式サイト`: http://www.ats-lang.org/
+.. _`ATS言語公式Wiki`: https://github.com/githwxi/ATS-Postiats/wiki
+.. _`ATSプログラミング入門`: http://jats-ug.metasepi.org/doc/ATS2/INT2PROGINATS/
+.. _`ATSプログラミングチュートリアル`: http://jats-ug.metasepi.org/doc/ATS2/ATS2TUTORIAL/
+.. _`Effective ATS`: https://github.com/jats-ug/translate/blob/master/Manual/EffectiveATS.md
+.. _`MLプログラマ向けATS言語ガイド`: https://github.com/jats-ug/translate/blob/master/Web/cs.likai.org/ats/ml-programmers-guide-to-ats.md
+.. _`Japan ATS User Group`: http://jats-ug.metasepi.org/
