@@ -1,6 +1,6 @@
 CONF_FILE = source/conf.py
 RST_FILES = $(glob source/*.rst)
-ODG_FILES = $(glob source/_static/fig/*/*.odg)
+ODG_FILES = $(glob source/fig/*/*.odg)
 PNG_FILES = $(replacesuffixes .odg, .png, $(ODG_FILES))
 
 .PHONY: clean publish
@@ -8,7 +8,7 @@ PNG_FILES = $(replacesuffixes .odg, .png, $(ODG_FILES))
 .DEFAULT: $(CONF_FILE) $(RST_FILES) $(PNG_FILES)
 	make html
 
-.SUBDIRS: $(glob source/_static/fig/*/)
+.SUBDIRS: $(glob source/fig/*/)
 	%.png: %.odg
 		unoconv -f png -o $@.tmp $< || unoconv -n -f png -o $@.tmp $< \
 		|| unoconv -f png -o $@.tmp $< || unoconv -n -f png -o $@.tmp $<

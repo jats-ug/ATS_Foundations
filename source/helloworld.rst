@@ -42,7 +42,7 @@ ATS 言語はコンパイラを使ってそのソースコードを実行しま�
 ソースコード "nothing.dats" のコンパイルに "patsopt" というコマンドを使いました。
 このコマンドはどのように動作するのでしょうか？
 
-.. figure:: _static/fig/helloworld/patsopt.png
+.. figure:: fig/helloworld/patsopt.png
    :scale: 70%
 
 xxx
