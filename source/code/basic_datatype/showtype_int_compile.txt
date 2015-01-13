@@ -1,0 +1,2 @@
+$ patscc showtype_int.dats
+**SHOWTYPE**(/tmp/showtype_int.dats: 39(line=2, offs=19) -- 40(line=2, offs=20)): S2Eapp(S2Ecst(g1int_int_t0ype); S2Ecst(int_kind), S2Eintinf(3))

@@ -1,0 +1,3 @@
+$ patscc print_int.dats
+$ ./a.out
+3
