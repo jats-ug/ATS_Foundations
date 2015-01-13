@@ -46,7 +46,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'ATSプログラミングの基礎'
-copyright = u'2015, Metasepi team'
+copyright = u'2015, Metasepi team. This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
