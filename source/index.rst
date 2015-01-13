@@ -13,6 +13,7 @@ Contents:
    :numbered:
 
    preface
+   install_ats
    helloworld
    basic_datatype
 

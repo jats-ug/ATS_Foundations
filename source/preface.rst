@@ -10,37 +10,20 @@
 .. _OCaml: https://ocaml.org/
 .. _プログラミングの基礎: http://pllab.is.ocha.ac.jp/~asai/book/Top.html
 
-デザインレシピ
-==============
-
-xxx
-
 ATS言語について
 ===============
 
 xxx
 
-ATSコンパイラのインストール
-===========================
-
-この本は単なる読み物、というよりも読者が実際にATS言語のコードを書いて試してみることを前提にしています。
-
-Linuxへのインストール
----------------------
-
-xxx
-
-Windowsへのインストール
------------------------
-
-xxx
-
-Mac OS Xへのインストール
-------------------------
-
-xxx
-
 参考となる資料
 ==============
+
+* http://www.ats-lang.org/
+* https://github.com/githwxi/ATS-Postiats/wiki
+* http://jats-ug.metasepi.org/doc/ATS2/INT2PROGINATS/
+* http://jats-ug.metasepi.org/doc/ATS2/ATS2TUTORIAL/
+* https://github.com/jats-ug/translate/blob/master/Manual/EffectiveATS.md
+* https://github.com/jats-ug/translate/blob/master/Web/cs.likai.org/ats/ml-programmers-guide-to-ats.md
+* http://jats-ug.metasepi.org/
 
 xxx
