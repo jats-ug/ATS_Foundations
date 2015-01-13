@@ -1,0 +1,4 @@
+$ patscc helloworld.dats
+$ ./a.out
+Hello, world!
+

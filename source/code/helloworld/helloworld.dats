@@ -1,3 +1,3 @@
-val _ = println! "Hello, world!"
+val () = println! "Hello, world!"
 
 implement main0 () = ()
