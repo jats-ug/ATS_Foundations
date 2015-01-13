@@ -1,10 +1,19 @@
 CONF_FILE = source/conf.py
 RST_FILES = $(glob source/*.rst)
+ODG_FILES = $(glob source/_static/fig/*/*.odg)
+PNG_FILES = $(replacesuffixes .odg, .png, $(ODG_FILES))
 
 .PHONY: clean publish
 
-.DEFAULT: $(CONF_FILE) $(RST_FILES)
+.DEFAULT: $(CONF_FILE) $(RST_FILES) $(PNG_FILES)
 	make html
+
+.SUBDIRS: $(glob source/_static/fig/*/)
+	%.png: %.odg
+		unoconv -f png -o $@.tmp $< || unoconv -n -f png -o $@.tmp $< \
+		|| unoconv -f png -o $@.tmp $< || unoconv -n -f png -o $@.tmp $<
+		convert -resize 600x $@.tmp $@
+		rm -f $@.tmp
 
 publish: .DEFAULT
 	mkdir -p $(HOME)/doc/jats-ug.github.io/doc/ATS2
