@@ -17,8 +17,8 @@ PNG_FILES = $(replacesuffixes .odg, .png, $(ODG_FILES))
 
 publish: .DEFAULT
 	mkdir -p $(HOME)/doc/jats-ug.github.io/doc/ATS2
-	rm -rf $(HOME)/doc/jats-ug.github.io/doc/ATS2/ATS_Foundations_ja
-	cp -rf build/html $(HOME)/doc/jats-ug.github.io/doc/ATS2/ATS_Foundations_ja
+	rm -rf $(HOME)/doc/jats-ug.github.io/doc/ATS2/ATS_Foundations
+	cp -rf build/html $(HOME)/doc/jats-ug.github.io/doc/ATS2/ATS_Foundations
 
 clean:
 	make clean
