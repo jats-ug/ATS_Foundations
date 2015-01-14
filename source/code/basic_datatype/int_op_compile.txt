@@ -1,7 +1,4 @@
 $ patscc int_op.dats
-**SHOWTYPE**(/tmp/int_op.dats: 68(line=3, offs=30) -- 77(line=3, offs=39)): S2Eapp(S2Ecst(g1int); S2EVar(4135->S2Eextkind(atstype_int)), S2Eapp(S2Ecst(+); S2EVar(4136->S2Eintinf(3)), S2EVar(4137->S2Eapp(S2Ecst(mul_int_int); S2EVar(4133->S2Eintinf(4)), S2EVar(4134->S2Eintinf(2))))))
-**SHOWTYPE**(/tmp/int_op.dats: 109(line=4, offs=31) -- 119(line=4, offs=41)): S2Eapp(S2Ecst(g1int); S2EVar(4141->S2Eextkind(atstype_int)), S2Eapp(S2Ecst(*); S2EVar(4142->S2Eapp(S2Ecst(add_int_int); S2EVar(4139->S2Eintinf(3)), S2EVar(4140->S2Eintinf(4)))), S2EVar(4143->S2Eintinf(2))))
-**SHOWTYPE**(/tmp/int_op.dats: 150(line=5, offs=30) -- 155(line=5, offs=35)): S2Eapp(S2Ecst(g1int); S2EVar(4144->S2Eextkind(atstype_int)), S2Eapp(S2Ecst(-); S2EVar(4145->S2Eintinf(2)), S2EVar(4146->S2Eintinf(3))))
 $ ./a.out
 11
 14

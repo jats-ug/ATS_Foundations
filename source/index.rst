@@ -16,6 +16,7 @@ Contents:
    install_ats
    helloworld
    basic_datatype
+   showtype
 
 Indices and tables
 ==================
