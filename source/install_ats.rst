@@ -2,15 +2,15 @@
 Install ATS compiler
 ====================
 
-この本は単なる読み物というよりも、読者が実際に ATS 言語のコードを書いて試してみることを前提にしています。
-コンピュータの上で ATS ソースコードを動作させるには ATS 言語のコンパイラが必要になります。
+This book is not only for reading, but also trying to write some ATS code.
+To run ATS code on your computer, you need ATS lanugage compiler.
 
-この章では、最新の ATS コンパイラである ATS/Postiats (通常 ATS2 と呼ばれます) をインストールしてみましょう。
+In his chapter, let's install the ATS lanugage compiler named ATS/Postiats (ATS2).
 
-使っているプラットフォームの説明に進む前に、ATS コンパイラのソースコードをダウンロードしておきましょう。
+Please download a source code of the ATS compiler, before read following sub chapters.
 
-* http://sourceforge.net/projects/ats2-lang/files/ から ATS2-Postiats-X.Y.Z.tgz
-* http://sourceforge.net/projects/ats2-lang-contrib/files/ から ATS2-Postiats-contrib-X.Y.Z.tgz
+* ATS2-Postiats-X.Y.Z.tgz http://sourceforge.net/projects/ats2-lang/files/
+* ATS2-Postiats-contrib-X.Y.Z.tgz http://sourceforge.net/projects/ats2-lang-contrib/files/
 
 Linux
 =====
