@@ -1,4 +1,6 @@
 /build/
+/source/code/*/a.out
+/source/code/*/*_dats.c
 .omakedb
 .omakedb.lock
 OMakefile.omc
