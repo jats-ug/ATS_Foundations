@@ -36,9 +36,33 @@ You will get following intended result, by compiling the code and running it.
 .. literalinclude:: code/basic_datatype/int_op_compile.txt
    :language: shell
 
+Multiplication and division are given priority over addition and subtraction, without parentheses.
 
+You can also do division ``/`` and modulus ``%``.
 
-xxx division operator
+.. literalinclude:: code/basic_datatype/divmod_op.dats
+   :language: ocaml
+   :linenos:
+
+Let's compile and run it.
+
+.. literalinclude:: code/basic_datatype/divmod_op_compile.txt
+   :language: shell
+
+By the way, what happen if you do division with 0 as divisor?
+
+.. literalinclude:: code/basic_datatype/divzero.dats
+   :language: ocaml
+   :linenos:
+
+Interestingly, divzero.dats occurs an error on compiling time,
+even though many programming language take care division with 0 as runtime error.
+
+.. literalinclude:: code/basic_datatype/divzero_compile.txt
+   :language: shell
+
+However, the compilation error message is hard to understand for the reader on this chapter.
+I'll explain detail of the error messages elsewhere.
 
 Real number
 ===========
@@ -46,8 +70,8 @@ Real number
 Character string
 ================
 
-Truth value
-===========
+Boolean value
+=============
 
 The other datatypes
 ===================
