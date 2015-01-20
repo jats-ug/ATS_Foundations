@@ -176,8 +176,6 @@ html_static_path = ['_static']
 # base URL from which the finished HTML is served.
 #html_use_opensearch = ''
 
-html_search_language = 'ja'
-
 # This is the file name suffix for HTML files (e.g. ".xhtml").
 #html_file_suffix = None
 
