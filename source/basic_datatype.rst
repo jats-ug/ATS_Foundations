@@ -1,54 +1,53 @@
-================
-基本的なデータ型
-================
+===============
+Basic datatypes
+===============
 
-この章では、ATS であつかう基本的なデータ型を紹介します。
+In the chapter, we learn some basic datatypes on ATS.
 
-整数
-====
+Integer
+=======
 
-まず、以下のような内容のテキストファイル print_int.dats を作ってみましょう。
+First, let's create a text file named print_int.dats has following context:
 
 .. literalinclude:: code/basic_datatype/print_int.dats
    :language: ocaml
    :linenos:
 
-コンパイル実行してみましょう。
+This program prints integer 3 on console. Then compile it.
 
 .. literalinclude:: code/basic_datatype/print_int_compile.txt
    :language: shell
 
-意図通り、3 がコンソールに表示されました。
+You get the result just as our intended.
 
-整数に対する四則演算を行なうこともできます。加算は +、現在は -、乗算は * です。
-次のようなファイル int_op.dats を作りましょう。
+It's available doing basic arithmetic operations on integers.
+Addition operator is ``+``, subtraction is ``-`` and multiplication is ``*``.
+let's create a text file named int_op.dats has following context:
 
 .. literalinclude:: code/basic_datatype/int_op.dats
    :language: ocaml
    :linenos:
 
-share/atspre_staload.hats というファイルをインクルードしていますが、これは ATS のテンプレートを使うために必要になります。
-+ のような演算子は ATS ではテンプレートとして実装されています。
+The int_op.dats file includes share/atspre_staload.hats file that is needes to use ATS's template.
+Some operators such like ``+`` are implemented using the template on ATS language implementation.
 
-上記のソースコードをコンパイル/実行してみましょう。
+You will get following intended result, by compiling the code and running it.
 
 .. literalinclude:: code/basic_datatype/int_op_compile.txt
    :language: shell
 
-実行結果は意図したものでしょう。
 
-xxx 除算について
 
-xxx
+xxx division operator
 
-実数
-====
+Real number
+===========
 
-文字列
-======
+Character string
+================
 
-真偽値
-======
+Truth value
+===========
 
-その他のデータ
-==============
+The other datatypes
+===================
