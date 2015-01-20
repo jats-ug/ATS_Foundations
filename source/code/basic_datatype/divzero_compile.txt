@@ -1,0 +1,4 @@
+$ patscc divzero.dats
+/tmp/divzero.dats: 60(line=3, offs=22) -- 61(line=3, offs=23): error(3): unsolved constraint: C3NSTRprop(main; S2Eapp(S2Ecst(!=); S2EVar(4137->S2Eapp(S2Ecst(sub_int_int); S2EVar(4133->S2Eintinf(2)), S2EVar(4134->S2Eintinf(2)))), S2Eintinf(0)))
+typechecking has failed: there are some unsolved constraints: please inspect the above reported error message(s) for information.
+exit(ATS): uncaught exception: _2home_2user_2src_2ATS_2dPostiats_2src_2pats_error_2esats__FatalErrorExn(1025)

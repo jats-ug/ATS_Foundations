@@ -1,0 +1,4 @@
+$ patscc divmod_op.dats
+$ ./a.out
+3
+1
