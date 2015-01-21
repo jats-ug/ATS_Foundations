@@ -10,49 +10,49 @@ ATS program to do nothing
 =========================
 
 What is the minimum program?
-見方によりますが、多くの場合は何もしない main 関数だけを持つようなプログラムでしょう。
-さっそく "何もしない ATS プログラム" を作ってみましょう。
+It's mostly a program has nothing without a empty main function.
+Let's create such "ATS program to do nothing".
 
 .. literalinclude:: code/helloworld/nothing.dats
    :language: ocaml
    :linenos:
 
-これは何もしない main 関数を持つ ATS プログラムです。
-ソースコードを詳しく解説すると以下のようになるでしょう。
+This is the ATS program has a main function doing nothing.
+Detail of the code is explained as following:
 
-* ATSプログラムは main0 関数から開始されます。
-* キーワード implement を使って新しい関数 main0 を定義しています。
-* main0 関数は宣言済みで引数は無く、返り値は void 型です。
-* 上記の main0 関数本体では何もしないまま () を返しています。この () は void 型の唯一の値です。
+* Any ATS programs start at ``main0`` function
+* Keyword ``implement`` defines a new function ``main0`` at the code
+* ``main0`` function has been declared in ATS language implementation
+* ``main0`` has no arguments and return value is ``void`` type
+* The body of the ``main0`` function does nothing and return ``()``
+* The ``()`` is the only value of ``void`` type
 
 Compile and run it
 ==================
 
-さっそく先の "何もしない ATS プログラム" をコンパイルしてみましょう。
-まずは先のソースコードを nothing.dats の名前でテキストファイルに保存しましょう。
-その後、次のコマンドを入力してください。
+Let's compile the "ATS program to do nothing".
+Save it as ``nothing.dats`` and run following commands:
 
 .. literalinclude:: code/helloworld/nothing_compile.txt
    :language: shell
    :linenos:
 
-実行ファイル a.out が生成されました。
-もちろん何もしないプログラムなので、実行してもコンソールには何も表示されません。
+An executable ``a.out`` is created by ATS compiler ``patscc``.
+Of course, the executable prints nothing on console while running.
 
-ソースコード nothing.dats のコンパイルに patscc というコマンドを使いました。
-このコマンドはどのように動作するのでしょうか？
+By the way, how does the ``patscc`` command work?
 
 .. figure:: fig/helloworld/patsopt.png
    :scale: 70%
 
-上図のように patscc コマンドは内部で2つのコマンドを呼び出します。
+As in the figure, the ``patscc`` internally calls two commands.
 
-1つ目は patsopt コマンドで、このコマンドは ATS 言語ソースコードをC言語ソースコードにコンパイルします。
-この時、ATS 言語ソースコードを型検査し、型エラーが見つかればエラー終了します。
-その型検査が正常終了した後、ATS 言語からC言語へのコンパイルが実行されます。
+The first command is ``patsopt`` that compile ATS language code to C language,
+while the ``patsopt`` does typecheck the ATS code and reports type errors.
+The compilation ATS to C is aborted, if typechecking found some type errors.
 
-2つ目は gcc コマンドです。このコマンドはおそらく多くの読者にとって馴染み深いでしょう。
-patsopt コマンドが生成したC言語ソースコードはこのコマンドで実行バイナリになります。
+The second command is ``gcc`` that is familiar to everyone.
+C language code created by ``patsopt`` is compiled to executable by the ``gcc`` command.
 
 Print character string on console
 =================================
