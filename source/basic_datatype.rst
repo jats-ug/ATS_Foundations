@@ -1,6 +1,6 @@
-===============
-Basic datatypes
-===============
+================
+Basic data types
+================
 
 In the chapter, we learn some basic datatypes on ATS.
 
@@ -73,5 +73,5 @@ Character string
 Boolean value
 =============
 
-The other datatypes
-===================
+The other data types
+====================
