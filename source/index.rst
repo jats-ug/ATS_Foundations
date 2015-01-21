@@ -16,7 +16,11 @@ Contents:
    install_ats
    helloworld
    basic_datatype
+   name_definition
+   function_definition
+   conditional
    showtype
+   error_message
 
 Indices and tables
 ==================
