@@ -57,27 +57,28 @@ C language code created by ``patsopt`` is compiled to executable by the ``gcc`` 
 Print character string on console
 =================================
 
-patscc コマンドの使い方がわかったので、何か有意なプログラムを作ってみましょう。
+We learn how to use ``patscc`` command in previous sub chapters.
+Let's try "Hello, world!" program.
 
 .. literalinclude:: code/helloworld/helloworld.dats
    :language: ocaml
    :linenos:
 
-このソースコードには新しい要素がいくつか登場しています。
+This code includes following new items:
 
-* val は束縛の宣言です。ここでは println! 関数の返り値を void 値に束縛しています。
-* println! は ATS コンパイラ内部で解釈される特殊なキーワードで、引数をコンソールに表示した後、リターンコードをコンソールに出力します。返り値は void です。
+* ``val`` defines binding between name and value
+* The ``val`` at the code binds function return value of the function ``println!`` as ``void`` value
+* ``println!`` is a special keyword that prints the argument on console and return ``void`` value
 
-このプログラムはコンソールに "Hello, world!" という文字列を表示します。
+Then, the code prints the character string ``"Hello, world!"`` on console.
 
 .. literalinclude:: code/helloworld/helloworld_compile.txt
    :language: shell
    :linenos:
 
-命令型プログラミングに慣れ親しんだ読者にとって、この実行結果は少し奇妙に見えるかもしれません。
-ATS は即時評価のプログラミング言語です。
-そのため概念上、次のようなことが実行時に起きます。
+This result may sound strange for a beginner of functional programming who has already learned imperative programming.
+Conceptually, what happens at run-time in a call-by-value language such as ATS is following:
 
-1. 式 println! "Hello, world!" が値 () に評価されます。この時、コンソールに "Hello, world!" という文字列が出力されます。
-2. val 宣言によって = の左辺にある () と、println! "Hello, world!" の返り値である () の間に束縛ができます。
-3. main0 関数が実行され、この関数は何もせずに終了します。
+1. The expression ``println! "Hello, world!"`` is evaluated to the value ``()``, while it prints the character string ``"Hello, world!"`` on console
+2. ``val`` creates a bind between ``()`` at left side of ``=`` and the result value of the expression ``println! "Hello, world!"``
+3. The function ``main0`` is evaluated and does nothing
