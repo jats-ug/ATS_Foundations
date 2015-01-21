@@ -7,7 +7,7 @@ To run ATS code on your computer, you need ATS lanugage compiler.
 
 In his chapter, let's install the ATS lanugage compiler named ATS/Postiats (ATS2).
 
-Please download a source code of the ATS compiler, before read following sub chapters.
+Please download source codes of the ATS compiler, before read following sub chapters.
 
 * ATS2-Postiats-X.Y.Z.tgz http://sourceforge.net/projects/ats2-lang/files/
 * ATS2-Postiats-contrib-X.Y.Z.tgz http://sourceforge.net/projects/ats2-lang-contrib/files/
@@ -15,15 +15,15 @@ Please download a source code of the ATS compiler, before read following sub cha
 Linux
 =====
 
-`Debian GNU/Linux`_ を例に説明します。
+As an example, ATS2 installation on `Debian GNU/Linux`_ is explained here.
 
-はじめに ATS2 のインストールに必要なパッケージ群をインストールしてください。
+First, install some packages needed to install ATS2.
 
 .. code-block:: shell
 
    $ sudo apt-get install gcc libgc-dev libgmp-dev make
 
-次に、ATS コンパイラのソースコードを解凍して、環境変数を設定しましょう。
+Next, uncompress the source codes of the ATS compiler, and set some environment variables.
 
 .. code-block:: shell
 
@@ -33,7 +33,7 @@ Linux
    $ tar xf ATS2-Postiats-contrib-X.Y.Z.tgz
    $ export PATSHOMERELOC=`pwd`/ATS2-Postiats-contrib-X.Y.Z
 
-最後に、ATS コンパイラをコンパイルします。
+Finally, compile the ATS compiler.
 
 .. code-block:: shell
 
@@ -46,11 +46,9 @@ Linux
 Windows
 =======
 
-Windows 環境に ATS2 をインストールするには Cygwin_ が必要です。
-`setup-x86.exe`_ もしくは `setup-x86_64.exe`_ をダウンロードして Cygwin をインストールしてください。
-以降は setup-x86_64.exe を使った場合について説明します。
+Installing ATS2 on Windows needs Cygwin_ that should be installed by `setup-x86.exe`_ or `setup-x86_64.exe`_ program.
 
-はじめに、setup-x86_64.exe を再度起動して、 ATS2 のインストールに必要な以下のパッケージ群をインストールしてください。
+First, install following packages needed to install ATS2 with running setup-x86.exe or setup-x86_64.exe again.
 
 * gcc-core
 * libgc-devel
@@ -61,7 +59,7 @@ Windows 環境に ATS2 をインストールするには Cygwin_ が必要です
 .. _`setup-x86.exe`: http://cygwin.com/setup-x86.exe
 .. _`setup-x86_64.exe`: http://cygwin.com/setup-x86_64.exe
 
-次に、Cygwin コンソールを起動し、ATS コンパイラのソースコードを解凍して、環境変数を設定しましょう。
+Next, uncompress the source codes of the ATS compiler on Cygwin console, and set some environment variables.
 
 .. code-block:: shell
 
@@ -71,7 +69,7 @@ Windows 環境に ATS2 をインストールするには Cygwin_ が必要です
    $ tar xf ATS2-Postiats-contrib-X.Y.Z.tgz
    $ export PATSHOMERELOC=`pwd`/ATS2-Postiats-contrib-X.Y.Z
 
-最後に、ATS コンパイラをコンパイルします。
+Finally, compile the ATS compiler.
 
 .. code-block:: shell
 
@@ -82,15 +80,13 @@ Windows 環境に ATS2 をインストールするには Cygwin_ が必要です
 Mac OS X
 ========
 
-Homebrew_ がインストールされていることを前提に説明します。
-
-はじめに、ATS2 のインストールに必要なパッケージ群をインストールしてください。
+First, set up Homebrew_ and install some packages needed to install ATS2.
 
 .. code-block:: shell
 
    $ brew install gmp bdw-gc
 
-次に、ATS コンパイラのソースコードを解凍して、環境変数を設定しましょう。
+Next, uncompress the source codes of the ATS compiler, and set some environment variables.
 
 .. code-block:: shell
 
@@ -100,12 +96,12 @@ Homebrew_ がインストールされていることを前提に説明します�
    $ tar xf ATS2-Postiats-contrib-X.Y.Z.tgz
    $ export PATSHOMERELOC=`pwd`/ATS2-Postiats-contrib-X.Y.Z
 
-最後に、ATS コンパイラをコンパイルします。
+Finally, compile the ATS compiler.
 
 .. code-block:: shell
 
    $ cd ${PATSHOME}
    $ ./configure
-   $ make
+   $ make GCFLAG=-D_ATS_NGC
 
 .. _Homebrew: http://brew.sh/
