@@ -4,7 +4,7 @@ Preface
 
 Welcome to ATS_ programming world!
 
-This book is a beginning guide for ATS programming based on `プログラミングの基礎 (Programming Foundations)`_ that is known as a good beginning guide for OCaml_.
+This book is a beginning guide for ATS programming based on the book `プログラミングの基礎 (Programming Foundations)`_ that is known as a good beginning guide for OCaml_.
 
 .. _ATS: http://www.ats-lang.org/
 .. _OCaml: https://ocaml.org/
