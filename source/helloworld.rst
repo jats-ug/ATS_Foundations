@@ -57,7 +57,7 @@ C language code created by ``patsopt`` is compiled to executable by the ``gcc`` 
 Print character string on console
 =================================
 
-We learn how to use ``patscc`` command in previous sub chapters.
+We learn how to use ``patscc`` command in the previous sub chapter.
 Let's try "Hello, world!" program.
 
 .. literalinclude:: code/helloworld/helloworld.dats
