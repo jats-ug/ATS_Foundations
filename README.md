@@ -1,4 +1,6 @@
-# Book: ATSプログラミングの基礎
+# Book: "ATS Programming Foundations"
+
+http://jats-ug.metasepi.org/doc/ATS2/ATS_Foundations/
 
 ## License
 
