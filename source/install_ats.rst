@@ -5,7 +5,7 @@ Install ATS compiler
 This book is not only for reading, but also trying to write some ATS code.
 To run ATS code on your computer, you need ATS lanugage compiler.
 
-In his chapter, let's install the ATS lanugage compiler named ATS/Postiats (ATS2).
+In this chapter, let's install the ATS lanugage compiler named ATS/Postiats (ATS2).
 
 Please download source codes of the ATS compiler, before read following sub chapters.
 
