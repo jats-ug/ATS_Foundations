@@ -48,37 +48,36 @@ Please read `"Internal types" page at ATS2 wiki`_, if you understand more of the
 
 .. _`"Internal types" page at ATS2 wiki`: https://github.com/githwxi/ATS-Postiats/wiki/Internal-types
 
-整数に対する四則演算を行うこともできました。
-次のようなファイル int_op.dats を作りましょう。
+We learned addition, subtraction and multiplication on integers.
+Create a new file ``int_op.dats`` to watch the type using ``$showtype`` directive.
 
 .. literalinclude:: code/showtype/int_op.dats
    :language: ocaml
    :linenos:
 
-$showtype 命令は引数をそのまま返すので、上記のように通常の関数の中に自由に埋め込むことができます。
-突然 share/atspre_staload.hats というファイルをインクルードしていますが、これは ATS のテンプレートを使うために必要になります。
-+ のような演算子は ATS ではテンプレートとして実装されています。
-
-上記のソースコードをコンパイル/実行してみましょう。
+We can inject $showtype directive into ATS code such like ``int_op.dats``,
+because the ``$showtype`` directive directly returns the argument.
+Let's compile and run it.
 
 .. literalinclude:: code/showtype/int_op_compile.txt
    :language: shell
 
-実行結果は意図したものでしょう。しかし $showtype 命令によって表示された型は単純な整数リテラルよりもかなり複雑です。3 + 4 * 2 の型を表わす内部表現を ATS のソースコード形式に戻してみましょう。
+Result of running executable is intended by readers.
+However, the type printed by ``$showtype`` is more complex than simple integer literal.
+Let's pretty-print the internal type representation of ``3 + 4 * 2``.
 
 .. code-block:: ocaml
 
     g1int(atstype_int, (3 + (mul_int_int(4, 2))))
 
-g1int の最初の引数はこの型が int 型であることを示しています。
-g1int の最後の引数は 3 + 4 * 2 をそのまま表わしています。
-mul_int_int は int 型に対する型レベルの乗算関数です。
-依存型では同じ int 型でも、文脈に依存して型が変化しているようです。
-つまり当該の int 型の値がどのようにして算出されたのか、 **ATS の型システムは知っているのです** 。
+First argument of ``g1int`` explains this type is ``int`` type.
+Second argument of ``g1int`` directly explains the calculation ``3 + 4 * 2``.
+``mul_int_int`` is for the function doing multiplication on type-level.
+That is **ATS's dependent type knows** how the value of ``int`` type is computed.
 
-このような依存型はどのような場面で役立つのでしょうか？
+What kinds of situations is these dependent type good for?
 
-xxx 除算について
+xxx About division operator
 
 Character string
 ================
