@@ -2,8 +2,8 @@
 Showing types
 =============
 
-これまで ATS における式には型がついていることを学びました。
-この章では、ソースコード中の式の型を表示する方法と、その型を理解する方法を身に付けましょう。
+We learned that any values have a type on ATS.
+This chapter explains how to show type of the value on your ATS code and understand the type.
 
 $showtype directive
 ===================
@@ -13,36 +13,40 @@ xxx
 Integer
 =======
 
-ところで、ATS ではこの 3 という値の型は何になるのでしょうか？それは $showtype 命令を使って確かめることができます。先程のソースコードを修正して、以下のような内容の showtype_int.dats ファイルを作ってみましょう。
+We learned that the of literal ``3`` is ``int``.
+By the way, we can directly watch the type of values using the ``$showtype``.
+Let's write following code named ``showtype_int.dats``:
 
 .. literalinclude:: code/showtype/showtype_int.dats
    :language: ocaml
    :linenos:
 
-この showtype_int.dats ファイルをコンパイルしてみましょう。
+Then, compile it.
 
 .. literalinclude:: code/showtype/showtype_int_compile.txt
    :language: shell
 
-コンパイルしただけであるにもかかわらず、\**SHOWTYPE** で始まるメッセージが表示されています。このメッセージは整数のリテラル 3 の型を表わしています。このメッセージ S2Eapp(S2Ecst(g1int_int_t0ype); S2Ecst(int_kind), S2Eintinf(3)) は型の内部表現ですが、、、おそらく読者は読むことが困難でしょう。そこで少し詳細に踏み込んだ解説をしてみます。
+The console shows a message with ``**SHOWTYPE**``.
+The message explains the type of integer literal ``3``,
+and "S2Eapp(S2Ecst(g1int_int_t0ype); S2Ecst(int_kind), S2Eintinf(3))" is a internal representation of the ATS's type.
+However, it's hard to read by a beginner.
+Let's learn more detail.
 
-* `S2Ecst` は、int, bool, list などの型定数を表わし、ここでは g1int_int_t0ype と int_kind の2つの型定数を導入しています
-* `S2Eintinf` は、無限精度整数を表わし、ここでは定数 3 を導入しています
-* `S2Eapp` は、関数適用の項を表わし、ここでは g1int_int_t0ype に2つの引数 int_kind と 3 を適用しています
+* `S2Ecst` is a type constant (for instance, int, bool, list, etc.) For now, it introduces two type constants ``g1int_int_t0ype`` and ``int_kind``.
+* `S2Eintinf` is an infinite precision integer. For now, it introduces the constant ``3``.
+* `S2Eapp` is an application term. For now, it applies two arguments ``int_kind`` and ``3`` to ``g1int_int_t0ype``.
 
-上記の内部表現を ATS のソースコード形式に戻してみましょう。
+Let's do pretty-print the message such like ATS code style.
 
 .. code-block:: ocaml
 
     g1int_int_t0ype(int_kind, 3)
 
-つまり、整数リテラル 3 には定数 3 に依存した int 型が割り当てられていることになります。
-このような値に依存した型は **依存型** と呼ばれます。
-この本では、しばらく依存型については深く踏み込みません。
-今は 3 には int 型が割り当てられていることを理解すれば十分です。
-もし、これら型の内部表現について知りたい場合は `ATS2 wiki の Internal types ページ`_ を参照してください。
+That is the value of integer literal ``3`` is applied ``int`` type depending on integer literal ``3``.
+The type depending on some value is called as **dependent type**.
+Please read `"Internal types" page at ATS2 wiki`_, if you understand more of the internal representation of dependent type.
 
-.. _`ATS2 wiki の Internal types ページ`: https://github.com/githwxi/ATS-Postiats/wiki/Internal-types
+.. _`"Internal types" page at ATS2 wiki`: https://github.com/githwxi/ATS-Postiats/wiki/Internal-types
 
 整数に対する四則演算を行うこともできました。
 次のようなファイル int_op.dats を作りましょう。
@@ -79,5 +83,9 @@ xxx 除算について
 Character string
 ================
 
+xxx
+
 Function
 ========
+
+xxx
