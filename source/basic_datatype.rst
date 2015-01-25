@@ -68,6 +68,27 @@ I'll explain detail of the error messages elsewhere.
 Real number
 ===========
 
+.. literalinclude:: code/basic_datatype/print_float.dats
+   :language: ocaml
+   :linenos:
+
+.. literalinclude:: code/basic_datatype/print_float_compile.txt
+   :language: shell
+
+
+
+.. literalinclude:: code/basic_datatype/float_op.dats
+   :language: ocaml
+   :linenos:
+
+.. literalinclude:: code/basic_datatype/float_op_compile.txt
+   :language: shell
+
+
+.. literalinclude:: code/basic_datatype/float_op_nozero.dats
+   :language: ocaml
+   :linenos:
+
 xxx
 
 Character string
