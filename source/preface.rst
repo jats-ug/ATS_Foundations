@@ -4,7 +4,7 @@ Preface
 
 Welcome to ATS_ programming world!
 
-This book is a beginning guide for ATS programming based on the book `プログラミングの基礎 (Programming Foundations)`_ that is known as a good beginning guide for OCaml_.
+This book is a beginning guide for ATS programming based on the book `プログラミングの基礎 (Programming Foundations)`_ that is recognized as a good beginning guide for `OCaml`_.
 
 .. _ATS: http://www.ats-lang.org/
 .. _OCaml: https://ocaml.org/
@@ -16,6 +16,14 @@ What is ATS programming language?
 Why do we need to learn a new functional language?
 
 xxx
+
+The goal of this book
+=====================
+
+The goal of this book is "You become able to read `Introduction to Programming in ATS`_ alone."
+
+ATS language society already has some good documents.
+`Introduction to Programming in ATS`_ is one of them.
 
 The other documents
 ===================
