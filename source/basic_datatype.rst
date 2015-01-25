@@ -19,6 +19,7 @@ This program prints integer ``3`` on console. Then compile it.
    :language: shell
 
 You get the result just as our intended.
+The ``3`` in the ``print_int.dats`` file is a literal, and type of the value is ``int``.
 
 It's available doing basic arithmetic operations on integers.
 Addition operator is ``+``, subtraction is ``-`` and multiplication is ``*``.
