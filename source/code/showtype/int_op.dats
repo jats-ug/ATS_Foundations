@@ -1,3 +1,4 @@
+(* File: int_op.dats *)
 #include "share/atspre_staload.hats"
 
 val () = println! ($showtype 3 + 4 * 2)
