@@ -68,14 +68,19 @@ I'll explain detail of the error messages elsewhere.
 Real number
 ===========
 
+Literal of real number is represented using a decimal point.
+
 .. literalinclude:: code/basic_datatype/print_float.dats
    :language: ocaml
    :linenos:
 
+A value of real number is able to be printed using ``println!``.
+
 .. literalinclude:: code/basic_datatype/print_float_compile.txt
    :language: shell
 
-
+Addition operator ``+``, subtraction ``-``, multiplication ``*`` and division ``/`` can be used on real number.
+Please see following ``float_op.dats``:
 
 .. literalinclude:: code/basic_datatype/float_op.dats
    :language: ocaml
@@ -84,12 +89,22 @@ Real number
 .. literalinclude:: code/basic_datatype/float_op_compile.txt
    :language: shell
 
+Zeros after the decimal point are optional.
 
 .. literalinclude:: code/basic_datatype/float_op_nozero.dats
    :language: ocaml
    :linenos:
 
-xxx
+ATS is different to OCaml, and can use operators between different types (such like ``int`` and ``float``).
+
+.. literalinclude:: code/basic_datatype/float_int_op.dats
+   :language: ocaml
+   :linenos:
+
+.. literalinclude:: code/basic_datatype/float_int_op_compile.txt
+   :language: shell
+
+This mixing is based on ATS template system.
 
 Character string
 ================
