@@ -113,6 +113,15 @@ xxx Exercise: (1) 2*3.14*10 (2) 1.73*1.73 (3) 7/2
 Character string
 ================
 
+Literal of character string is wrapped with double quotes such like ``"foo"``.
+
+.. literalinclude:: code/basic_datatype/print_foo.dats
+   :language: ocaml
+   :linenos:
+
+.. literalinclude:: code/basic_datatype/print_foo_compile.txt
+   :language: shell
+
 xxx
 
 Boolean value
