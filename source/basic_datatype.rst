@@ -70,7 +70,7 @@ xxx Exercise: (1) 7-3*4 (2) 7÷2*2 (3) 7*2÷2
 Real number
 ===========
 
-Literal of real number is represented using a decimal point.
+Literal of real number is represented using a decimal point, and the type is ``float``.
 
 .. literalinclude:: code/basic_datatype/print_float.dats
    :language: ocaml
@@ -113,7 +113,7 @@ xxx Exercise: (1) 2*3.14*10 (2) 1.73*1.73 (3) 7/2
 Character string
 ================
 
-Literal of character string is wrapped with double quotes such like ``"foo"``.
+Literal of character string is wrapped with double quotes such like ``"foo"``, and the type is ``string``.
 
 .. literalinclude:: code/basic_datatype/print_foo.dats
    :language: ocaml
@@ -121,6 +121,8 @@ Literal of character string is wrapped with double quotes such like ``"foo"``.
 
 .. literalinclude:: code/basic_datatype/print_foo_compile.txt
    :language: shell
+
+How to concatenate two strings? Please use ``string_append`` function.
 
 xxx
 
