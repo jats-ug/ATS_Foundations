@@ -65,6 +65,8 @@ even though many programming language take care division with ``0`` as run-time 
 However, the compilation error message is hard to understand for the reader on this chapter.
 I'll explain detail of the error messages elsewhere.
 
+xxx Exercise: (1) 7-3*4 (2) 7÷2*2 (3) 7*2÷2
+
 Real number
 ===========
 
@@ -105,6 +107,8 @@ ATS is different to OCaml, and can use operators between different types (such l
    :language: shell
 
 This mixing is based on ATS template system.
+
+xxx Exercise: (1) 2*3.14*10 (2) 1.73*1.73 (3) 7/2
 
 Character string
 ================
