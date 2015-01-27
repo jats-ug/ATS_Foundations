@@ -17,11 +17,11 @@ Contents:
    helloworld
    basic_datatype
    name_definition
-   string
    function_definition
    conditional
    showtype
    error_message
+   string
 
 Indices and tables
 ==================
