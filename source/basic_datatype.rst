@@ -65,7 +65,14 @@ even though many programming language take care division with ``0`` as run-time 
 However, the compilation error message is hard to understand for the reader on this chapter.
 I'll explain detail of the error messages elsewhere.
 
-xxx Exercise: (1) 7-3*4 (2) 7÷2*2 (3) 7*2÷2
+Exercise
+--------
+
+Calculate following expressions on ATS language.
+
+A. :math:`7 - 3 \times 4`
+B. :math:`7 \div 2 \times 2`
+C. :math:`7 \times 2 \div 2`
 
 Real number
 ===========
@@ -108,7 +115,14 @@ ATS is different to OCaml, and can use operators between different types (such l
 
 This mixing is based on ATS template system.
 
-xxx Exercise: (1) 2*3.14*10 (2) 1.73*1.73 (3) 7/2
+Exercise
+--------
+
+Calculate following expressions on ATS language.
+
+A. :math:`2 \times 3.14 \times 10`
+B. :math:`1.73 \times 1.73`
+C. :math:`7 / 2`
 
 Boolean value
 =============
@@ -145,7 +159,15 @@ Examples of the test operators are: ``=`` is for "equality", ``!=`` for "inequal
 .. literalinclude:: code/basic_datatype/bool_test_compile.txt
    :language: shell
 
-xxx Exercise:
+Exercise
+--------
+
+Test conditions of following sentences on ATS language.
+
+A. ":math:`2` is greater than :math:`3`."
+B. "The second power of :math:`3.1415` is not less than :math:`10`."
+C. "The remainder obtained by dividing :math:`8` by :math:`3` is equal to :math:`2`."
+D. ":math:`3 + 4 + 5` is equal to :math:`4 \times 3`."
 
 The other data types
 ====================
