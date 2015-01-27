@@ -1,0 +1,10 @@
+$ patscc bool_op.dats
+$ ./a.out
+true
+false
+true
+false
+false
+true
+false
+false

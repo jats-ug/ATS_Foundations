@@ -110,28 +110,44 @@ This mixing is based on ATS template system.
 
 xxx Exercise: (1) 2*3.14*10 (2) 1.73*1.73 (3) 7/2
 
-Character string
-================
-
-Literal of character string is wrapped with double quotes such like ``"foo"``, and the type is ``string``.
-
-.. literalinclude:: code/basic_datatype/print_foo.dats
-   :language: ocaml
-   :linenos:
-
-.. literalinclude:: code/basic_datatype/print_foo_compile.txt
-   :language: shell
-
-How to concatenate two strings? Please use ``string_append`` function.
-
-xxx
-
 Boolean value
 =============
 
-xxx
+Boolean value is a value for true or false.
+On ATS language, ``true`` is for true and ``false`` for false.
+Type of the boolean value is ``bool``.
+
+.. literalinclude:: code/basic_datatype/print_bool.dats
+   :language: ocaml
+   :linenos:
+
+.. literalinclude:: code/basic_datatype/print_bool_compile.txt
+   :language: shell
+
+We can use logical operations on the boolean value.x
+``&&`` is for "and", ``||`` for "or" and ``not`` for "negation", in the order of descending priorities.
+
+.. literalinclude:: code/basic_datatype/bool_op.dats
+   :language: ocaml
+   :linenos:
+
+.. literalinclude:: code/basic_datatype/bool_op_compile.txt
+   :language: shell
+
+``true`` and ``false`` are rarely used on real programming.
+Normally, we use them to test whether some conditions hold.
+Examples of the test operators are: ``=`` is for "equality", ``!=`` for "inequality", ``>`` for "greater than", ``<`` for "less than", ``>=`` for "greater than or equal", and ``<=`` "less than or equal".
+
+.. literalinclude:: code/basic_datatype/bool_test.dats
+   :language: ocaml
+   :linenos:
+
+.. literalinclude:: code/basic_datatype/bool_test_compile.txt
+   :language: shell
+
+xxx Exercise:
 
 The other data types
 ====================
 
-xxx
+Character string and the other data types are explained later.
