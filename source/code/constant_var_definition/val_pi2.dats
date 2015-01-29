@@ -3,5 +3,5 @@
 
 implement main0 () = {
   val pi = 3.1415
-  val () = println! pi
+  val () = println! (pi * 2)
 }
