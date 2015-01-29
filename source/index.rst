@@ -16,12 +16,18 @@ Contents:
    install_ats
    helloworld
    basic_datatype
-   name_definition
+   constant_var_definition
    function_definition
    conditional
    showtype
    error_message
+   tuple
+   record
    string
+   list
+   recursive_function
+   nat_recursion
+   dijkstras_algorithm
 
 Indices and tables
 ==================
