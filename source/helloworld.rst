@@ -82,3 +82,21 @@ Conceptually, what happens at run-time in a call-by-value language such as ATS i
 1. The expression ``println! "Hello, world!"`` is evaluated to the value ``()``, while it prints the character string ``"Hello, world!"`` on console
 2. ``val`` creates a bind between ``()`` at left side of ``=`` and the result value of the expression ``println! "Hello, world!"``
 3. The function ``main0`` is evaluated and does nothing
+
+The "Hello, world!" program can be written in ``main0`` function using ``where`` keyword, as following:
+
+.. literalinclude:: code/helloworld/helloworld2.dats
+   :language: ocaml
+   :linenos:
+
+Also, because ``main0`` function returns ``void`` value, we can drop ``() where`` as following:
+
+.. literalinclude:: code/helloworld/helloworld3.dats
+   :language: ocaml
+   :linenos:
+
+More simply, we can alos write following, because ``println!`` return ``void`` value as same as the value will be returned by ``main0`` function.
+
+.. literalinclude:: code/helloworld/helloworld4.dats
+   :language: ocaml
+   :linenos:
