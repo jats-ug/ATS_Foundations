@@ -1,0 +1,6 @@
+$ patscc val_overwrite.dats
+$ ./a.out
+1
+1
+2
+1
