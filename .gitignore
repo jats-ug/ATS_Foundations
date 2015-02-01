@@ -5,5 +5,4 @@
 /source/fig/*/*.png
 .omakedb
 .omakedb.lock
-OMakefile.omc
-OMakeroot.omc
+*.omc

@@ -1,0 +1,13 @@
+DATS_FILES = $(set-diff $(glob *.dats), $(NOT_COMPILABLE))
+C_FILES    = $(replacesuffixes .dats, _dats.c, $(DATS_FILES))
+EXE_FILES  = $(removesuffix $(C_FILES))
+
+.PHONY: clean
+
+.DEFAULT: $(EXE_FILES)
+
+$(EXE_FILES): %_dats: %.dats
+	patscc -o $@ $<
+
+clean:
+	rm -f $(EXE_FILES) $(C_FILES)
