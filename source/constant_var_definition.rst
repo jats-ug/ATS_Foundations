@@ -41,6 +41,15 @@ The name binding of code ``val_overwrite.dats`` is represented as following figu
 .. figure:: fig/constant_var_definition/name_binding.png
    :scale: 70%
 
+.. note::
+
+   **Exercise**: Define following constant variables on ATS language, and print it on console.
+
+   A. The name is ``e`` and the value is :math:`2`.
+   B. The name is ``positive`` and the value is :math:`e > 0`.
+   C. The name is ``seconds_of_day`` and the value is :math:`60 * 60 * 24`.
+   D. The name is ``name`` and the value is a char string ``"John"``.
+
 (Mutable) variable
 ==================
 
