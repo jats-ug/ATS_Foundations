@@ -34,3 +34,6 @@ However, currying is rarely used at ATS programming.
 .. figure:: fig/function_definition/two_arguments.png
    :scale: 90%
 
+.. note::
+
+   **Exercise**: Write a function ``bmi`` that takes a meter tall and a kilogram weight then returns the body mass index (BMI). The BMI is calculated with dividing the kilogram weight by the square of the meter tall.
