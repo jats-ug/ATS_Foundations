@@ -2,6 +2,7 @@
 /source/code/*/a.out
 /source/code/*/*_dats
 /source/code/*/*_dats.c
+/source/fig/*/*.png
 .omakedb
 .omakedb.lock
 OMakefile.omc
