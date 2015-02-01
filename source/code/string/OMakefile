@@ -1,0 +1,2 @@
+NOT_COMPILABLE = try_string_append.dats
+open ../../../mk/common_code.om

@@ -1,0 +1,2 @@
+NOT_COMPILABLE = divzero.dats
+open ../../../mk/common_code.om
