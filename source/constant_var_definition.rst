@@ -2,6 +2,9 @@
 Constant definition
 ===================
 
+Constant (immutable) variable
+=============================
+
 Constant variable can be defined following:
 
 .. literalinclude:: code/constant_var_definition/val_pi.dats
@@ -37,3 +40,8 @@ The name binding of code ``val_overwrite.dats`` is represented as following figu
 
 .. figure:: fig/constant_var_definition/name_binding.png
    :scale: 70%
+
+(Mutable) variable
+==================
+
+Mutable variable is ready on ATS language, however it's rarely used on ATS programming.
