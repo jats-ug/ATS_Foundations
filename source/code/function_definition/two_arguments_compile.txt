@@ -1,0 +1,3 @@
+$ patscc two_arguments.dats
+$ ./a.out
+9
