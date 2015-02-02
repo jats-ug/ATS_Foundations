@@ -29,3 +29,21 @@ The execution result is able to understand for us.
 BTW, why needs some type assignments such like ``println! (a:int)``?
 Type inference on ATS language can't understand type of everything.
 Sometimes we should tell the type inferencer the type of values.
+
+We can also write any values of ``bool`` type at ``CONDITION``.
+
+.. literalinclude:: code/conditional/if_then_else2.dats
+   :language: ocaml
+   :linenos:
+
+.. literalinclude:: code/conditional/if_then_else2_compile.txt
+   :language: shell
+
+However, a compile error occurs with writing a value of the other type at ``CONDITION``.
+
+.. literalinclude:: code/conditional/if_not_bool.dats
+   :language: ocaml
+   :linenos:
+
+.. literalinclude:: code/conditional/if_not_bool_compile.txt
+   :language: shell

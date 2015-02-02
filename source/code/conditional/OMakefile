@@ -1,2 +1,2 @@
-NOT_COMPILABLE =
+NOT_COMPILABLE = if_not_bool.dats
 open ../../../mk/common_code.om

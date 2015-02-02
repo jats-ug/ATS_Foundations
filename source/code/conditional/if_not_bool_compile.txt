@@ -1,0 +1,7 @@
+$ patscc if_not_bool.dats
+/home/kiwamu/doc/ATS_Foundations/source/code/conditional/if_not_bool.dats: 105(line=5, offs=15) -- 106(line=5, offs=16): error(3): the dynamic expression cannot be assigned the type [S2Ecst(bool_t0ype)].
+/home/kiwamu/doc/ATS_Foundations/source/code/conditional/if_not_bool.dats: 105(line=5, offs=15) -- 106(line=5, offs=16): error(3): mismatch of static terms (tyleq):
+The actual term is: S2Eapp(S2Ecst(g1int_int_t0ype); S2Ecst(int_kind), S2Eintinf(1))
+The needed term is: S2Ecst(bool_t0ype)
+patsopt(TRANS3): there are [1] errors in total.
+exit(ATS): uncaught exception: _2home_2kiwamu_2src_2ATS_2dPostiats_2src_2pats_error_2esats__FatalErrorExn(1025)
