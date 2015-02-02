@@ -41,17 +41,27 @@ However, currying is rarely used at ATS programming.
 Typechecking
 ============
 
-What happen if the function ``f`` takes a value typed ``float``?
+What happen if the function ``f`` takes a value typed ``double``?
 
-.. literalinclude:: code/function_definition/f_takes_float.dats
+.. literalinclude:: code/function_definition/f_takes_double.dats
    :language: ocaml
    :linenos:
 
-.. literalinclude:: code/function_definition/f_takes_float_compile.txt
+.. literalinclude:: code/function_definition/f_takes_double_compile.txt
    :language: shell
 
 A compile error occurs at the code ``val r  = f 4.0`` while typechecking.
-It means the function ``f`` takes ``float`` type that not match type of ``f`` as following figure:
+It means the function ``f`` takes ``double`` type that not match type of ``f`` as following figure:
 
-.. figure:: fig/function_definition/f_takes_float.png
+.. figure:: fig/function_definition/f_takes_double.png
    :scale: 90%
+
+You should create a new function to maintain ``double`` type on the function ``f``.
+
+.. literalinclude:: code/function_definition/f_takes_double2.dats
+   :language: ocaml
+   :linenos:
+
+.. literalinclude:: code/function_definition/f_takes_double2_compile.txt
+   :language: shell
+

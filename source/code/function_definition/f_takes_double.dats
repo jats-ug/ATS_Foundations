@@ -1,4 +1,4 @@
-(* File: f_takes_float.dats *)
+(* File: f_takes_double.dats *)
 #include "share/atspre_staload.hats"
 
 fun f (x:int): int = 3 * x
