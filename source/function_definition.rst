@@ -72,5 +72,12 @@ The code ``f_takes_double2.dats`` can be compiled. The function ``f2`` is typed 
 
 .. note::
 
-   **Exercise**: xxx
+   **Exercise**: Write a function that takes a number of cranes and returns the total of their legs. (Crane has two legs.)
 
+.. note::
+
+   **Exercise**: Write a function that takes a number of tortoises and returns the total of their legs. (Tortoise has four legs.)
+
+.. note::
+
+   **Exercise**: Finally, write a function that takes the total of cranes and tortoises and the total of their legs, and return the total of the cranes.
