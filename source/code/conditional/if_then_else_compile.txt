@@ -1,0 +1,4 @@
+$ patscc if_then_else.dats
+$ ./a.out
+1
+2
