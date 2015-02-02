@@ -14,7 +14,7 @@ Let's write a function ``f`` to triple the argument.
 .. literalinclude:: code/function_definition/func_syntax_compile.txt
    :language: shell
 
-The function ``f`` is typed with following figure that explains the argument ``x`` is typed with ``int`` and the return value is also typed with ``int``. The function ``f`` is typed with ``(int) -> int``.
+The function ``f`` is typed as following figure that explains the argument ``x`` is typed with ``int`` and the return value is also typed with ``int``. The function ``f`` is typed with ``(int) -> int``.
 
 .. figure:: fig/function_definition/func_syntax.png
    :scale: 90%
@@ -56,7 +56,7 @@ It means the function ``f`` takes ``double`` type that not match type of ``f`` a
 .. figure:: fig/function_definition/f_takes_double.png
    :scale: 90%
 
-You should create a new function to maintain ``double`` type on the function ``f``.
+You should create a new function ``f2`` to maintain ``double`` type on the function ``f``.
 
 .. literalinclude:: code/function_definition/f_takes_double2.dats
    :language: ocaml
@@ -65,3 +65,7 @@ You should create a new function to maintain ``double`` type on the function ``f
 .. literalinclude:: code/function_definition/f_takes_double2_compile.txt
    :language: shell
 
+The function ``f2`` is typed as following figure:
+
+.. figure:: fig/function_definition/f_takes_double2.png
+   :scale: 90%
