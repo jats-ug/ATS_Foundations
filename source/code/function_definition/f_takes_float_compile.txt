@@ -1,0 +1,7 @@
+$ patscc f_takes_float.dats
+/home/kiwamu/doc/ATS_Foundations/source/code/function_definition/f_takes_float.dats: 134(line=7, offs=14) -- 137(line=7, offs=17): error(3): the dynamic expression cannot be assigned the type [S2Eapp(S2Ecst(g0int_t0ype); S2Ecst(int_kind))].
+/home/kiwamu/doc/ATS_Foundations/source/code/function_definition/f_takes_float.dats: 134(line=7, offs=14) -- 137(line=7, offs=17): error(3): mismatch of static terms (tyleq):
+The actual term is: S2Eapp(S2Ecst(g0float_t0ype); S2Ecst(double_kind))
+The needed term is: S2Eapp(S2Ecst(g0int_t0ype); S2Ecst(int_kind))
+patsopt(TRANS3): there are [1] errors in total.
+exit(ATS): uncaught exception: _2home_2kiwamu_2src_2ATS_2dPostiats_2src_2pats_error_2esats__FatalErrorExn(1025)

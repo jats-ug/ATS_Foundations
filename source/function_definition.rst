@@ -37,3 +37,21 @@ However, currying is rarely used at ATS programming.
 .. note::
 
    **Exercise**: Write a function ``bmi`` that takes a meter tall and a kilogram weight then returns the body mass index (BMI). The BMI is calculated with dividing the kilogram weight by the square of the meter tall.
+
+Typechecking
+============
+
+What happen if the function ``f`` takes a value typed ``float``?
+
+.. literalinclude:: code/function_definition/f_takes_float.dats
+   :language: ocaml
+   :linenos:
+
+.. literalinclude:: code/function_definition/f_takes_float_compile.txt
+   :language: shell
+
+A compile error occurs at the code ``val r  = f 4.0`` while typechecking.
+It means the function ``f`` takes ``float`` type that not match type of ``f`` as following figure:
+
+.. figure:: fig/function_definition/f_takes_float.png
+   :scale: 90%
