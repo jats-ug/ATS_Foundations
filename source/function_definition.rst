@@ -65,7 +65,12 @@ You should create a new function ``f2`` to maintain ``double`` type on the funct
 .. literalinclude:: code/function_definition/f_takes_double2_compile.txt
    :language: shell
 
-The function ``f2`` is typed as following figure:
+The code ``f_takes_double2.dats`` can be compiled. The function ``f2`` is typed as following figure:
 
 .. figure:: fig/function_definition/f_takes_double2.png
    :scale: 90%
+
+.. note::
+
+   **Exercise**: xxx
+
