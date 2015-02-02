@@ -1,3 +1,0 @@
-$ patscc print_float.dats
-$ ./a.out
-2.718000

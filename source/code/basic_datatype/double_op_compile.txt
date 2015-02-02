@@ -1,0 +1,3 @@
+$ patscc double_op.dats
+$ ./a.out
+21.333333

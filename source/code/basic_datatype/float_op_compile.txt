@@ -1,3 +1,0 @@
-$ patscc float_op.dats
-$ ./a.out
-21.333333

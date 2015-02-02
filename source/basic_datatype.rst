@@ -76,40 +76,40 @@ I'll explain detail of the error messages elsewhere.
 Real number
 ===========
 
-Literal of real number is represented using a decimal point, and the type is ``float``.
+Literal of real number is represented using a decimal point, and the type is ``double``.
 
-.. literalinclude:: code/basic_datatype/print_float.dats
+.. literalinclude:: code/basic_datatype/print_double.dats
    :language: ocaml
    :linenos:
 
 A value of real number is able to be printed using ``println!``.
 
-.. literalinclude:: code/basic_datatype/print_float_compile.txt
+.. literalinclude:: code/basic_datatype/print_double_compile.txt
    :language: shell
 
 Addition operator ``+``, subtraction ``-``, multiplication ``*`` and division ``/`` can be used on real number.
-Please see following ``float_op.dats``:
+Please see following ``double_op.dats``:
 
-.. literalinclude:: code/basic_datatype/float_op.dats
+.. literalinclude:: code/basic_datatype/double_op.dats
    :language: ocaml
    :linenos:
 
-.. literalinclude:: code/basic_datatype/float_op_compile.txt
+.. literalinclude:: code/basic_datatype/double_op_compile.txt
    :language: shell
 
 Zeros after the decimal point are optional.
 
-.. literalinclude:: code/basic_datatype/float_op_nozero.dats
+.. literalinclude:: code/basic_datatype/double_op_nozero.dats
    :language: ocaml
    :linenos:
 
-ATS is different to OCaml, and can use operators between different types (such like ``int`` and ``float``).
+ATS is different to OCaml, and can use operators between different types (such like ``int`` and ``double``).
 
-.. literalinclude:: code/basic_datatype/float_int_op.dats
+.. literalinclude:: code/basic_datatype/double_int_op.dats
    :language: ocaml
    :linenos:
 
-.. literalinclude:: code/basic_datatype/float_int_op_compile.txt
+.. literalinclude:: code/basic_datatype/double_int_op_compile.txt
    :language: shell
 
 This mixing is based on ATS template system.
