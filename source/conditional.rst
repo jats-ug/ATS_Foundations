@@ -87,3 +87,12 @@ The part ``else EXPRESSION_B`` is optional, if type of the ``EXPRESSION_A`` is `
 .. literalinclude:: code/conditional/println_without_else.dats
    :language: ocaml
    :linenos:
+
+.. note::
+
+   **Exercise**: What type is assigned on following conditional branch? Or, where is a type error issue on the expression?
+
+   A. ``if 2 < 1 then 3 else 4``
+   B. ``if "true" then 3.14 else 2.72``
+   C. ``if not (3 = 4) then 1 < 2 else 1 > 2``
+   D. ``if println! "false" then true else false``
