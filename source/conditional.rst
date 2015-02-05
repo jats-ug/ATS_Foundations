@@ -13,7 +13,7 @@ The syntax is following:
    if CONDITION then EXPRESSION_A else EXPRESSION_B
 
 The ``CONDITION`` should be a value of ``bool`` type.
-Also, the ``EXPRESSION_A`` and ``EXPRESSION_B`` should be typed with same type.
+Also, the ``EXPRESSION_A`` and ``EXPRESSION_B`` should be typed with same type, that becomes the type of the whole conditional branch expression.
 
 Let's write some code using ``if`` keyword.
 
@@ -96,3 +96,25 @@ The part ``else EXPRESSION_B`` is optional, if type of the ``EXPRESSION_A`` is `
    B. ``if "true" then 3.14 else 2.72``
    C. ``if not (3 = 4) then 1 < 2 else 1 > 2``
    D. ``if println! "false" then true else false``
+
+Conditional branch is also an expression
+========================================
+
+Let's see following code:
+
+.. literalinclude:: code/conditional/duplicate_code.dats
+   :language: ocaml
+   :linenos:
+
+.. literalinclude:: code/conditional/duplicate_code_compile.txt
+   :language: shell
+
+The code is runnable. However, the codes ``10 + x *`` are duplicated.
+
+.. figure:: fig/conditional/duplicate_code.png
+   :scale: 90%
+
+We can avoid the duplication, because conditional branch is also an expression.
+
+xxx
+
