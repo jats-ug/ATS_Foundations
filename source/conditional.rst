@@ -116,5 +116,15 @@ The code is runnable. However, the codes ``10 + x *`` are duplicated.
 
 We can avoid the duplication, because conditional branch is also an expression.
 
-xxx
+.. literalinclude:: code/conditional/no_duplicate_code.dats
+   :language: ocaml
+   :linenos:
 
+.. literalinclude:: code/conditional/no_duplicate_code_compile.txt
+   :language: shell
+
+The right side of the operator ``*`` should be assigned with the type ``int``,
+because the oprator is defined as templates such as taking ``int``
+while conditional branch doesn't have simple type such like ``int``.
+
+xxx
