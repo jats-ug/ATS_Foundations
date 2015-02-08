@@ -125,6 +125,12 @@ We can avoid the duplication, because conditional branch is also an expression.
 
 The right side of the operator ``*`` should be assigned with the type ``int``,
 because the oprator is defined as templates such as taking ``int``
-while conditional branch doesn't have simple type such like ``int``.
+while conditional branch doesn't have simple type ``int``.
 
-xxx
+.. note::
+
+   **Exercise**: Write function ``ampm`` that take o'clock and return either forenoon or afternoon.
+
+.. note::
+
+   **Exercise**: Write function ``constellation`` that take month and day as birthday and return constellation of the birthday.
