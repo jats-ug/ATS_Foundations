@@ -7,7 +7,7 @@ EXE_FILES  = $(removesuffix $(C_FILES))
 .DEFAULT: $(EXE_FILES)
 
 $(EXE_FILES): %_dats: %.dats
-	patscc -o $@ $<
+	patscc -o $@ $< -DATS_MEMALLOC_LIBC
 
 clean:
 	rm -f $(EXE_FILES) $(C_FILES)
