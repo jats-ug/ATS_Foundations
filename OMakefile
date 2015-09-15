@@ -10,10 +10,10 @@ PNG_FILES = $(replacesuffixes .odg, .png, $(ODG_FILES))
 
 .SUBDIRS: $(glob source/fig/*/)
 	%.png: %.odg
-		unoconv -f png -o $@.tmp $< || unoconv -n -f png -o $@.tmp $< \
-		|| unoconv -f png -o $@.tmp $< || unoconv -n -f png -o $@.tmp $<
-		convert -resize 600x $@.tmp $@
-		rm -f $@.tmp
+		unoconv -f png -o $@_tmp.png $< || unoconv -n -f png -o $@_tmp.png $< \
+		|| unoconv -f png -o $@_tmp.png $< || unoconv -n -f png -o $@_tmp.png $<
+		convert -resize 600x $@_tmp.png $@
+		rm -f $@_tmp.png
 
 .SUBDIRS: $(glob source/code/*/)
 
